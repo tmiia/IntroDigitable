@@ -1,6 +1,86 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper #full-video {
+  z-index: 9;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  z-index: 9;
+}
+.wrapper .col-left {
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+}
+.wrapper .col-left .homepart {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .col-left .homepart .inner {
+  overflow: hidden;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+}
+.wrapper .col-left .homepart .inner #video-left {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.wrapper .col-left #logo-left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.wrapper .col-right {
+  position: absolute;
+  z-index: 10;
+  width: 50%;
+  height: 100%;
+  transform: translate(100%);
+}
+.wrapper .col-right .homepart {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wrapper .col-right .homepart .inner {
+  overflow: hidden;
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  transform: translate(-50%);
+}
+.wrapper .col-right .homepart .inner #video-right {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+.wrapper .col-right #logo-right {
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+}
+
+.logo {
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */

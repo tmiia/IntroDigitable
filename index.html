@@ -8,6 +8,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="wrapper">
+    <video id="full-video" muted autoplay loop src="http://nightcall.us/videos/timelapse_1.webm"></video>
 
+    <div class="col-left">
+      <div class="homepart">
+        <div class="inner">
+          <video id="video-left" muted autoplay loop src="http://nightcall.us/videos/timelapse_1.webm"></video>
+        </div>
+      </div>
+      <img class="logo" id="logo-left" src="./Assets/Media/big_logo_nightcall.png" alt="">
+    </div>
+
+    <div class="col-right">
+      <div class="homepart">
+        <div class="inner">
+          <video id="video-right" muted autoplay loop src="http://nightcall.us/videos/timelapse_1.webm"></video>
+        </div>
+      </div>
+      <img class="logo" id="logo-right" src="./Assets/Media/big_logo_nightcall.png" alt="">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+  <script src="./Assets/JS/script.js"></script>
 </body>
 </html>

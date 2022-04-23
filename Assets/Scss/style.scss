@@ -1,4 +1,83 @@
 body{
   margin: 0;
   padding: 0;
+  overflow: hidden;
+}
+
+.wrapper{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  #full-video{
+    z-index: 9;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    z-index: 9;
+  }
+  .col-left{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    .homepart{
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .inner{
+        overflow: hidden;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        #video-left{
+          min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          z-index: 1;
+        }
+      }
+    }
+    #logo-left{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  .col-right{
+    position: absolute;
+    z-index: 10;
+    width: 50%;
+    height: 100%;
+    transform: translate(100%);
+    .homepart{
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      .inner{
+        overflow: hidden;
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        transform: translate(-50%);
+        #video-right{
+          min-width: 100%;
+          min-height: 100%;
+          position: absolute;
+          z-index: 1;
+        }
+      }
+    }
+    #logo-right{
+      position: absolute;
+      top: 50%;
+      left: -50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+.logo{
+  position: absolute;
 }
